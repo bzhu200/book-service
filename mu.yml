@@ -1,0 +1,13 @@
+environments:
+- name: acceptance
+- name: production
+service:
+  port: 8080
+  pathPatterns:
+  - /*
+  pipeline:
+    source:
+      provider: GitHub
+      repo: bzhu200/book-service
+    build:
+      image: 'openjdk:8-jdk-alpine'
