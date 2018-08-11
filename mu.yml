@@ -10,4 +10,4 @@ service:
       provider: GitHub
       repo: bzhu200/book-service
     build:
-      image: 'openjdk:8-jdk-alpine'
+      image: aws/codebuild/java:openjdk-8
