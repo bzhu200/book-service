@@ -11,4 +11,9 @@ public class BookController {
         return "Greetings from Boo Service!";
     }
 
+    @RequestMapping("/health")
+    public String health() {
+        return "{\"status\":\"OK\"}";
+    }
+
 }
